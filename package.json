@@ -1,0 +1,24 @@
+{
+  "name": "webloginnetflix",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lgLuis/WebLoginNetflix.git"
+  },
+  "author": "LAG",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lgLuis/WebLoginNetflix/issues"
+  },
+  "homepage": "https://github.com/lgLuis/WebLoginNetflix#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-sass": "^5.0.0"
+  }
+}
