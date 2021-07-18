@@ -1,4 +1,7 @@
-$rojo : red;
+@import "variables";
+
+
+$rojo : gray;
 
 body{
     background-color: $rojo;
