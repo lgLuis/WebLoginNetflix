@@ -8,7 +8,57 @@
     <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
-    <h1>LUIS 2021</h1>
+    <header class="site-header">
+        <img src="/img/logo.svg" alt="isologotipo">
+    </header>
+
+    <main class="formulari-login contenedor">
+        <form action="#">
+            <legend>Inicie sesión</legend>
+            <div class="campo">
+                <input type="text" id="usuario">
+                <label>Email y número de telefono.</label>
+            </div>
+            <div class="campo">
+                <input type="password" id="password">
+                <label>Contraseña</label>
+            </div>
+            <div class="submit">
+                <input type="submit" value="Iniciar sesion">
+            </div>
+            <div class="acciones">
+                <div class="recuerdame">
+                    <input type="chekbox">
+                    <label>Recuérdame</label>
+                </div>
+
+                <div class="ayuda">
+                    <a href="#">¿Necesitas ayuda?</a>
+                </div>
+            </div><!--FIN ACCIONES-->
+        </form>
+        <div class="contenido-inferior">
+            <a href="#">Iniciar sesión con Facebook</a>
+            <a href="#" class="nuevo-usuario">
+                ¿Primera vez en Chetflix? <span>Suscribete</span>
+            </a>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="contenedor">
+            <p>Por preguntas llamar...</p>
+            <nav class="menu-footer">
+                <a href="#">Términos de las tarjetas de regalo</a>
+                <a href="#">Términos de uso</a>
+                <a href="#">Declaración de privacidad</a>
+            </nav>
+            <select class="lenguage">
+                <option value="eng">English</option>
+                <option value="esp">Spanish</option>
+            </select>
+        </div><!--FIN CONTENEDOR-->
+    </footer>
+
     
 </body>
-<!-- </html> -->
