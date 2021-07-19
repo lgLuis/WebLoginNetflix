@@ -1,8 +1,12 @@
 @import "variables";
+@import "mixins";
 
+html{
+    @include box-sizing(border-box);
+}
 
-$rojo : gray;
-
-body{
-    background-color: $rojo;
+*,
+*:before,
+*:after {
+    @include box-sizing(inherit);
 }
