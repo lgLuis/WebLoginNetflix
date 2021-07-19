@@ -49,7 +49,7 @@ a{
 .formulario-login{
 
     @include tablet{
-        background-color: rgba(0,0,0, 0.75);
+        background-color: rgba(0,0,0, 0.7);
         max-width: 450px;
         padding: 2rem 4rem;
         margin: 3rem auto 4rem auto;
@@ -91,4 +91,42 @@ form{
             }
         }
     }
+    .submit{
+        display: flex;
+        margin-top: 2rem;
+        input[type="submit"]{
+            @include boton($primario);
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+    .acciones{
+        display: flex;
+        justify-content: space-between;
+        padding: .5rem 0;
+        margin: .5rem 0 8rem 0 ;
+        label, a {
+            font-size: .8rem;
+            text-decoration: none;
+        }
+    }
+}
+
+.contenido-inferior{
+    padding-bottom: 2rem;
+    a {
+        font-size: .8rem;
+    }
+    .nuevo-usuario{
+        font-size: 1rem;
+        margin-top: 1rem;
+        display: flex;
+        a{
+            font-size: 1rem;
+            color: $blanco;
+            margin-left: .5rem;
+        }
+    }
+
 }

@@ -50,7 +50,7 @@ a:hover {
 
 @media (min-width: 768px) {
   .formulario-login {
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(0, 0, 0, 0.5);
     max-width: 450px;
     padding: 2rem 4rem;
     margin: 3rem auto 4rem auto;
@@ -72,6 +72,7 @@ form .campo label {
   position: absolute;
   top: 1.1rem;
   left: 1rem;
+  font-size: 0.9rem;
   transition: font-size 0.2s ease, top 0.2s ease;
 }
 form .campo input {
@@ -88,4 +89,50 @@ form .campo input:focus {
 form .campo input:focus + label {
   font-size: 0.7rem;
   top: 0.5rem;
+}
+form .submit {
+  display: flex;
+  margin-top: 2rem;
+}
+form .submit input[type=submit] {
+  background-color: #d00000;
+  color: #ffffff;
+  display: block;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 7px;
+  font-size: 1rem;
+  padding: 1rem 0;
+}
+form .submit input[type=submit]:hover {
+  cursor: pointer;
+}
+form .acciones {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  margin: 0.5rem 0 8rem 0;
+}
+form .acciones label, form .acciones a {
+  font-size: 0.8rem;
+  text-decoration: none;
+}
+
+.contenido-inferior {
+  padding-bottom: 2rem;
+}
+.contenido-inferior a {
+  font-size: 0.8rem;
+}
+.contenido-inferior .nuevo-usuario {
+  font-size: 1rem;
+  margin-top: 1rem;
+  display: flex;
+}
+.contenido-inferior .nuevo-usuario a {
+  font-size: 1rem;
+  color: #ffffff;
+  margin-left: 0.5rem;
 }
