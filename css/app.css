@@ -1,9 +1,43 @@
-body {
-  background-color: gray;
+/*MEDIA QUERIES*/
+html {
+  box-sizing: border-box;
 }
 
-@media(min-width: 480px){
-  body{
-    background-color: aqua;
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #6c757d;
+}
+@media (min-width: 768px) {
+  body {
+    background-color: unset;
+    background-image: url(/img/years-for-movies.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
   }
+}
+
+a {
+  color: #343a40;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.contenedor {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.logo {
+  margin-top: 0.5rem;
+  max-width: 100px;
 }

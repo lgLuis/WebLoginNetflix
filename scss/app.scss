@@ -10,3 +10,38 @@ html{
 *:after {
     @include box-sizing(inherit);
 }
+
+body{
+    background-color: $negro;
+    font-family: $fuentePrincipal;
+    color: $grisMedio;
+
+    @include tablet{
+        background-color: unset;
+        background-image: url(/img/years-for-movies.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom center;
+    }
+}
+
+a{
+    color: $grisFuerte;
+    text-decoration: none;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+.contenedor{
+    width: 90%;
+    margin:  0 auto;
+}
+
+.logo{
+    margin-top: .5rem;
+    max-width: 100px;
+    @include tablet{
+        margin-top: .8rem;
+        margin-left: 2%;
+    }
+}
