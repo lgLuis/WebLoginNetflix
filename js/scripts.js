@@ -13,7 +13,6 @@ inputs.forEach(input => {
 });
 
 function validarInput(e) {
-
     const estado = ['valido', 'no-valido'];
     let clase;
     if(e.target.value.length===0){
@@ -21,6 +20,10 @@ function validarInput(e) {
     }else{
         clase = estado[0];
     }
+    e.target.classList.remove(...estado);
+    e.target.classList.nextElementSibling(...estado); 
+    e.target.classList.add(clase);
+    e.target.classList.nextElementSibling(clase);
     // console.log(clase);
     if(clase === 'no-valido'){
         if(e.target.parentElement.nextElementSibling.classList[0]!=='alerta'){
@@ -29,10 +32,12 @@ function validarInput(e) {
             errorDiv.classList.add('alerta');
             //Insertar el error
             e.target.parentElement.parentElement.insertBefore(errorDiv,
-                e.target.parentElement.nextElementSibling);
+            e.target.parentElement.nextElementSibling);
         }
-
     }else{
         //limpiar el mensaje de error si existe
+        if(e.target.parentElement.nextElementSibling.classList[0]==='alert'){
+            e.target.parentElement.nextElementSibling.remove();
+        }
     }
 }
