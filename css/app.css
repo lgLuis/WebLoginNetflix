@@ -78,6 +78,15 @@ form .campo {
   display: flex;
   position: relative;
   margin-bottom: 0.8rem;
+  /* span {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    text-transform: uppercase;
+    &:hover{
+      cursor: pointer;
+    } */
+  }
 }
 form .campo label {
   position: absolute;
