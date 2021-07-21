@@ -23,7 +23,15 @@ function validarInput(e) {
     }
     // console.log(clase);
     if(clase === 'no-valido'){
-        //construir un mensaje de error
+        if(e.target.parentElement.nextElementSibling.classList[0]!=='alerta'){
+            const errorDiv =document.createElement('div');
+            errorDiv.appendChild(document.createTextNode('Éste elemento es obligatorio'));
+            errorDiv.classList.add('alerta');
+            //Insertar el error
+            e.target.parentElement.parentElement.insertBefore(errorDiv,
+                e.target.parentElement.nextElementSibling);
+        }
+
     }else{
         //limpiar el mensaje de error si existe
     }
