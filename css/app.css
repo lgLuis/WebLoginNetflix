@@ -36,18 +36,7 @@ a:hover {
   width: 90%;
   margin: 0 auto;
 }
-.alerta{
-  /* color: $secundario; */
-  display:block;
-  margin-bottom: .2rem;
-  padding: .5rem;
-  font-size: .8rem;
-  text-align: center;
-}
-input.no-valido{
-  border-bottom: 5px solid;
-  /* border-bottom: 5px solid $secundario!import; */
-}
+
 .logo {
   margin-top: 0.5rem;
   max-width: 100px;
@@ -78,15 +67,6 @@ form .campo {
   display: flex;
   position: relative;
   margin-bottom: 0.8rem;
-  /* span {
-    position: absolute;
-    right: 1rem;
-    top: 1rem;
-    text-transform: uppercase;
-    &:hover{
-      cursor: pointer;
-    } */
-  }
 }
 form .campo label {
   position: absolute;
@@ -94,18 +74,13 @@ form .campo label {
   left: 1rem;
   font-size: 0.9rem;
   transition: font-size 0.2s ease, top 0.2s ease;
-  /* &.valido{
-    font-size: .6rem;
-    top: .5rem;
-  } */
-} 
+}
 form .campo input {
   flex: 1;
   padding: 1.2rem 1rem 0.7rem 1rem;
   border: none;
   background-color: #6c757d;
   border-radius: 7px;
-  /* color: $blanco; */
 }
 form .campo input:focus {
   background-color: #ced4da;
@@ -207,9 +182,10 @@ form .acciones label, form .acciones a {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  padding: 1rem 3 rem;
-  border: 1px solid #343a40;
-  border-radius: 7px;
   background-color: #000000;
+  border-radius: 7px;
+  border: 1px solid #343a40;
   color: #ced4da;
+  margin-top: 2rem;
+  padding: 1rem 3 rem;
 }
